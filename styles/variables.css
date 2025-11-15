@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --main-color: rgba(0, 0, 0, 1);
+    --Inter-Variable: "inter-variable";
+    --Press-Start: "Press Start 2P-Regular";
+    --color-svg: rgba(255, 255, 255, 1);
+    --accent-color-heart: rgba(255, 0, 0, 1);
+    --contour-color: var(--main-color);
+    --label-color: rgba(255, 255, 255, 1);
+    --background-color: rgba(255, 255, 255, 1);
+    --button-span: rgba(255, 255, 255, 1);
+    --main-weight: 410;
+    --title-weight: 715;
+    --right-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
+    --bottom-gradient: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px);
+    --color-gradient: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}

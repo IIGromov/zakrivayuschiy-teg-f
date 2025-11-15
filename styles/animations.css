@@ -9,3 +9,71 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+.theme-menu__button:disabled:before {
+  animation: left-slide 0.5s ease-in-out infinite alternate;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--accent-color-heart, #FF0000);
+  animation: color 0.3s ease-in-out;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--accent-color-heart, #FF0000);
+  animation: color 0.3s ease-in-out 0.06s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--accent-color-heart, #FF0000);
+  animation: color 0.3s ease-in-out 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: scal 0.3s ease-in 1 alternate 0.1s;
+} 
+
+.like-icon.is-liked .sparks {
+  animation: appearance 0.3s ease-in 1 alternate 0.3s;
+} 
+
+.dialog {
+  animation: appearance  0.5s linear 1;
+}
+
+@keyframes left-slide {
+  0% {
+    left: -19px;
+  }
+  100% {
+    left: -15px;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scal {
+  0% {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
+  }
+}
+
+@keyframes color {
+  0% {
+    fill: var(--color-svg);
+  }
+  100% {
+    fill: var(--accent-color-heart);
+  }
+}
