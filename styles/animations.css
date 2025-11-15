@@ -9,45 +9,31 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-.theme-menu__button:disabled:before {
-  animation: left-slide 0.5s ease-in-out infinite alternate;
+
+
+.like-icon.is-liked .contour {
+  fill: var(--accent-color-heart, #FF0000);
+  transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--accent-color-heart, #FF0000);
-  animation: color 0.3s ease-in-out;
+  transition: fill 0.3s linear 0,03s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--accent-color-heart, #FF0000);
-  animation: color 0.3s ease-in-out 0.06s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--accent-color-heart, #FF0000);
-  animation: color 0.3s ease-in-out 0.06s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .heart {
-  animation: scal 0.3s ease-in 1 alternate 0.1s;
+  animation: scal 0.3s linear 1 alternate 0.1s;
 } 
 
 .like-icon.is-liked .sparks {
-  animation: appearance 0.3s ease-in 1 alternate 0.3s;
+  animation: appearance 0.3s linear 1 alternate 0.3s;
 } 
 
-.dialog {
-  animation: appearance  0.5s linear 1;
-}
-
-@keyframes left-slide {
-  0% {
-    left: -19px;
-  }
-  100% {
-    left: -15px;
-  }
-}
 
 @keyframes appearance {
   0% {
@@ -64,16 +50,7 @@
     transform-origin: 50% 50%;
   }
   100% {
-    transform: scale(1.5);
+    transform: scale(1.22);
     transform-origin: 50% 50%;
-  }
-}
-
-@keyframes color {
-  0% {
-    fill: var(--color-svg);
-  }
-  100% {
-    fill: var(--accent-color-heart);
   }
 }
